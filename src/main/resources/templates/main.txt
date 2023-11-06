@@ -1,0 +1,16 @@
+Hello, 
+${if:man}
+  man goes here
+  ${if:old}
+    inner man old here
+  ${/if:old}
+  ${if:!old}
+    inner man young here
+  ${/if:!old}
+${/if:man}
+${if:!man}
+  woman goes here, and incliude something for women
+  ${file:/templates/includeWomen.txt}
+${/if:!man}
+
+${file:/templates/includeAll.txt}

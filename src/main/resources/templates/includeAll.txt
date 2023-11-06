@@ -1,0 +1,2 @@
+--- this is an include file with passed text area parameter ---
+${str}
